@@ -15,8 +15,7 @@ RUN apt-get -y update && apt-get -y upgrade && \
 
 
 #install necessary services
-RUN apt-get install -y nginx php-fpm php-mysql default-mysql-server php-xml
-
+RUN apt-get install -y nginx php-fpm  php-mbstring php-mysql default-mysql-server php-xml
 
 #ADD FILES TO /tmp/ directory
 COPY ./srcs/init.sh ./
